@@ -1,0 +1,15 @@
+body {
+  background: #bada55;
+  font-family: 'Operator Mono';
+}
+.main {
+  padding: 30px 100px;
+}
+section {
+  padding: 20px;
+  background: #fff;
+  border-bottom: 1px solid #000;
+}
+p {
+  font-style: italic;
+}
