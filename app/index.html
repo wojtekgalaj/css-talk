@@ -49,6 +49,37 @@
           </div>
         </div>
       </section>
+      <section class="page-flow">
+        <h1>Page flow</h1>
+        <div class="example">
+          <p class="code">float: left;  <span>// try removing overflow hidden</span></p>
+          <div class="float-left border">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box free"></div>
+          </div>
+          <p>If you play around with the overview you will see how floats are
+          removed from the flow of the page.</p>
+        </div>
+        <div class="example">
+          <p class="code">position: fixed|absolute  <span>// no help from overflow hidden</span></p>
+          <div class="position-absolute border">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="example">
+          <p class="code">display: flex  <span>// YEEEY!</span></p>
+          <div class="display-flex border">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box free"></div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>

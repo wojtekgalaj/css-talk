@@ -17,6 +17,12 @@ h2
 
 .code
   font-family 'Operator Mono'
+  span
+    font-style italic
+    color #aaa
+
+.border
+  border 1px solid red
 
 .main
   padding: 30px 100px
@@ -70,4 +76,32 @@ p
 
 .display--flex
   display flex
+
+
+.free
+  position relative
+  bottom 20px
+// Page flow
+.page-flow
+  .float-left
+    overflow hidden
+    .box
+      float left
+  .position-absolute
+    position relative
+    overflow hidden
+    div
+      position absolute
+      &:nth-child(1)
+        top 10px
+        left 0
+      &:nth-child(2)
+        top 10px
+        left 50px
+      &:nth-child(3)
+        top 10
+        left 100px
+
+  .display-flex
+    display flex
 

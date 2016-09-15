@@ -20,6 +20,13 @@ h2 {
 .code {
   font-family: 'Operator Mono';
 }
+.code span {
+  font-style: italic;
+  color: #aaa;
+}
+.border {
+  border: 1px solid #f00;
+}
 .main {
   padding: 30px 100px;
 }
@@ -64,5 +71,37 @@ p {
   display: inline-block;
 }
 .display--flex {
+  display: flex;
+}
+.free {
+  position: relative;
+  bottom: 20px;
+}
+.page-flow .float-left {
+  overflow: hidden;
+}
+.page-flow .float-left .box {
+  float: left;
+}
+.page-flow .position-absolute {
+  position: relative;
+  overflow: hidden;
+}
+.page-flow .position-absolute div {
+  position: absolute;
+}
+.page-flow .position-absolute div:nth-child(1) {
+  top: 10px;
+  left: 0;
+}
+.page-flow .position-absolute div:nth-child(2) {
+  top: 10px;
+  left: 50px;
+}
+.page-flow .position-absolute div:nth-child(3) {
+  top: 10;
+  left: 100px;
+}
+.page-flow .display-flex {
   display: flex;
 }
