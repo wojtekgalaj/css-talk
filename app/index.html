@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -9,11 +10,47 @@
         <div class="controlls__turn prev">PREV</div>
         <div class="controlls__turn next">NEXT</div>
       </div>
-      <section>
-        a
+      <section class="the-cascade">
+        <h1>The cascade</h1>
+        <h2>and specificity</h2>
+        <div class="example">
+          <div class="box"></div>
+        </div>
+      </section>
+      <section class="display-types">
+        <h1>Display types</h1>
+        <div class="example">
+          <div class="display--block">
+            <p class="code">display: block</p>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="example">
+          <p class="code">display: inline</p>
+          <div class="display--inline">
+            <div class="box">I need content to be rendered</div>
+            <div class="box">Me too</div>
+          </div>
+        </div>
+        <div class="example">
+          <p class="code">display: inline-block</p>
+          <div class="display--inline-block">
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="example">
+          <p class="code">display: flex</p>
+          <img src="https://media.giphy.com/media/MlkYZYKLHZce4/giphy.gif" alt="">
+          <div class="display--flex">
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+        </div>
       </section>
     </div>
   </body>
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
     <script type="text/javascript" src="magic.js"></script>
 </html>
