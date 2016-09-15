@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-styl": "stylus app/style.styl --watch --out  app/style.css",
-    "serve": "browser-sync start --server app/  --files app/*.{css,html} --browser=false",
+    "serve": "browser-sync start --server app/  --files app/*.{css,html,js} --browser=false",
     "start": "npm run serve & npm run watch-styl"
   },
   "author": "",
