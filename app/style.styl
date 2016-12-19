@@ -1,3 +1,6 @@
+.big-font
+  font-size: 20em
+
 body
   background #bada55
   font-family Lato
@@ -59,6 +62,14 @@ p
     width 100px
     height 100px
     background green
+
+BEM
+.coche
+  color red
+.coche__puerta--abierto
+  @extend .coche
+.coche__puerta--cerrado
+
 
 // DISPLAY TYPES
 .display--block
